@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'users',
     'roles',
     'agencies',
+    'securityPersonnel',
+    'qualifications'
+    
 ]
 
 MIDDLEWARE = [
