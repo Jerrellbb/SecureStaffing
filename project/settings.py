@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'roles',
     'agencies',
     'securityPersonnel',
-    'qualifications'
+    'qualifications',
+    'shifts',
+    'jobs',
     
 ]
 

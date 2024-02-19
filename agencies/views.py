@@ -1,4 +1,4 @@
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics import  RetrieveUpdateDestroyAPIView
 from .models import Agency
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .serializers.common import AgencySerializer
@@ -20,7 +20,7 @@ class AgencyDetailView(RetrieveUpdateDestroyAPIView):
   queryset = Agency.objects.all()
 
   def get_serializer_class(self):
-    if self.request.method == 'get':
+    if self.request.method == 'GET':
       return PopulatedAgencySerializer
     else:
 

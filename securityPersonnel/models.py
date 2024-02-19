@@ -11,9 +11,8 @@ class Security(models.Model):
     related_name='user',
     null=True
   )
-  qualifications = models.ForeignKey(
+  qualifications = models.ManyToManyField(
     to='qualifications.Qualification',
-    on_delete=models.CASCADE,
     related_name='owned_qualifications',
-    null=True
+    
   )
