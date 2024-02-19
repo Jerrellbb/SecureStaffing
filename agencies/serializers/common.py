@@ -1,7 +1,7 @@
-from rest_framework import ModelSerializers
+from rest_framework import serializers
 from ..models import Agency
 
-class AgencySerializer(ModelSerializers):
+class AgencySerializer(serializers.ModelSerializer):
   
   class Meta:
     model = Agency 

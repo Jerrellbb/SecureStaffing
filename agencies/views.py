@@ -2,9 +2,26 @@ from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIV
 from .models import Agency
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .serializers.common import AgencySerializer
+from .serializers.populated import PopulatedAgencySerializer
+from lib.views import OwnerListCreateView
 # Create your views here.
 
-class AgencyCreateView(ListCreateAPIView):
+class AgencyListCreateView(OwnerListCreateView):
   queryset = Agency.objects.all()
-  serializer_class = AgencySerializer
+  
   permission_classes = [IsAuthenticatedOrReadOnly]
+
+  def get_serializer_class(self):
+    if self.request.method == 'GET':
+      return PopulatedAgencySerializer
+    return AgencySerializer
+  
+class AgencyDetailView(RetrieveUpdateDestroyAPIView):
+  queryset = Agency.objects.all()
+
+  def get_serializer_class(self):
+    if self.request.method == 'get':
+      return PopulatedAgencySerializer
+    else:
+
+      return AgencySerializer

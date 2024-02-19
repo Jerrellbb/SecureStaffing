@@ -1,5 +1,5 @@
 from .common import AgencySerializer
-# from users.serializers.common import 
+from users.serializers.common import UserSerializer
 
 class PopulatedAgencySerializer(AgencySerializer):
-  pass
+  owner = UserSerializer()

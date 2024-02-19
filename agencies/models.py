@@ -1,5 +1,5 @@
 from django.db import models
-from .validators.validator import phone_number_validator
+from validators.validator import phone_number_validator
 # Create your models here.
 class Agency(models.Model):
   name = models.CharField(max_length=255)
