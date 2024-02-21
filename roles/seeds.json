@@ -1,0 +1,16 @@
+[
+{
+  "model": "roles.role",
+  "pk": 1,
+  "fields": {
+    "name": "Agency"
+  }
+},
+{
+  "model": "roles.role",
+  "pk": 2,
+  "fields": {
+    "name": "Security"
+  }
+}
+]

@@ -1,0 +1,13 @@
+[
+{
+  "model": "agencies.agency",
+  "pk": 3,
+  "fields": {
+    "name": "second agency",
+    "email": null,
+    "phone_number": "+4407968345629",
+    "image": null,
+    "owner": 2
+  }
+}
+]

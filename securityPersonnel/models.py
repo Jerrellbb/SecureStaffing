@@ -16,3 +16,4 @@ class Security(models.Model):
     related_name='owned_qualifications',
     
   )
+  

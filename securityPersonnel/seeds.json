@@ -1,0 +1,18 @@
+[
+{
+  "model": "securityPersonnel.security",
+  "pk": 1,
+  "fields": {
+    "name": "bob",
+    "phone_number": "+4407534309968",
+    "user": 3,
+    "qualifications": [
+      1,
+      3,
+      4,
+      6,
+      8
+    ]
+  }
+}
+]

@@ -22,4 +22,7 @@ urlpatterns = [
     path('api/auth/',include('users.urls')),
     path('api/agencies/',include('agencies.urls')),
     path('api/security/',include('securityPersonnel.urls')),
+    path('api/shifts/', include('shifts.urls')),
+    
+    
 ]

@@ -1,6 +1,11 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from ..models import User
+from agencies.serializers.common import AgencySerializer
+from roles.serializers.common import RoleSerializer
+from shifts.serializers.common import ShiftSerializer
+
+
 
 User = get_user_model()
 
@@ -26,8 +31,11 @@ class RegistrationSerializer(serializers.ModelSerializer):
     return user
   
 class UserSerializer(serializers.ModelSerializer):
-#   role = ProjectSerializer(many=True, read_only=True)
+  owned_agency = AgencySerializer(many=True, read_only=True)
+  role = RoleSerializer()
+  
+
   
   class Meta:
     model = User # the model that is used to serialize the queryset
-    fields = ['username'] # which fields to serialize
+    fields = ['id','owned_agency', 'username', 'email', 'role', 'accepted_shifts']# which fields to serialize

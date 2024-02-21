@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'securityPersonnel',
     'qualifications',
     'shifts',
-    'jobs',
+    
     
 ]
 
