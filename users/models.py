@@ -6,7 +6,7 @@ class User(AbstractUser):
     to='roles.Role',
     on_delete=models.CASCADE,
     related_name='role',
-    null=True
+    
   )
   agency = models.ForeignKey(
         to='agencies.Agency',
