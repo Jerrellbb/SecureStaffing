@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider, } from "react-router-dom"
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
-
+// import './index.css'
+import './styles/main.scss'
 import AllShifts from './components/AllShifts.jsx'
 import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
@@ -29,12 +29,6 @@ const router = createBrowserRouter([
         element: <AllShifts/>,
         // loader: getAllProjects
       },
-      // {
-      //   path: "/projects/:id/",
-      //   element: <SingleProject/>,
-      //   // loader: async ({ params }) => getSingleProject(params.id),
-      //   // action: async ({ request }) => addComment(request)
-      // },
       {
         path: "/angencies/:id/",
         element: <AgencyProfile/>,
@@ -65,24 +59,12 @@ const router = createBrowserRouter([
       element: <CreateShift/>,
       
       },
-      // {
-      //   path: "/shift/:id/edit/",
-      //   element: <EditShift/>,
-      //   action: async ({ request }) => deleteProject(request),
-      //   loader: async ({ params }) => getSingleProject(params.id)
-      // },
       {
         path:"/shifts/",
         element: <AllShifts/>,
       //   loader: async ({ params }) => getAllProfiles(params)
       },
-      // {
-      //   path:"/auth/profile/:id/edit/",
-      //   element: <EditProfile/>,
-      //   action: async ({ request }) => editProfile(request),
-      //   loader: async ({ params }) => getProfile(params.id)
-      // }
-      
+    
     ]
   },
 ]);
