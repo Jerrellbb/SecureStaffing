@@ -15,8 +15,16 @@ class Shift(models.Model):
     agency = models.ForeignKey(
         'agencies.Agency',
         on_delete=models.CASCADE,
-        related_name='posted_shifts'
+        related_name='posted_shifts',
+        null = True
+
     )
+    owner = models.ForeignKey(
+        to='users.User',
+        on_delete=models.CASCADE,
+        related_name='owned_shift',
+        null=True
+      )
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
     available_slots = models.IntegerField(default=1)

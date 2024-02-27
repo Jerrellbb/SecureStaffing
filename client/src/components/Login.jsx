@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react'
 import { Form, useActionData, useNavigate } from 'react-router-dom'
-import { setToken } from "../utils/helpers/common"
+import { setToken } from "../../utils/helpers/common"
 
 
 import { ToastContainer, toast } from 'react-toastify'
@@ -19,7 +19,7 @@ export default function Login() {
     if (res?.status === 200) {
       setToken(res.data.access)
       navigate('/')
-      
+
     } else if (res?.status === 401) {
 
       toast.error('Password or Username is incorrect!')
@@ -40,7 +40,7 @@ export default function Login() {
         </Form>
       </div>
 
-      <ToastContainer theme= "dark" />
+      <ToastContainer theme="dark" />
     </>
   )
 }

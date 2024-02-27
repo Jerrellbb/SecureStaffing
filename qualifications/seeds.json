@@ -1,0 +1,65 @@
+[
+{
+  "model": "qualifications.qualification",
+  "pk": 1,
+  "fields": {
+    "name": "Close Protection"
+  }
+},
+{
+  "model": "qualifications.qualification",
+  "pk": 2,
+  "fields": {
+    "name": "SIA Door Supervisor"
+  }
+},
+{
+  "model": "qualifications.qualification",
+  "pk": 3,
+  "fields": {
+    "name": "Security Guard"
+  }
+},
+{
+  "model": "qualifications.qualification",
+  "pk": 4,
+  "fields": {
+    "name": "Cash & Valuables in Transit"
+  }
+},
+{
+  "model": "qualifications.qualification",
+  "pk": 5,
+  "fields": {
+    "name": "Key Holding"
+  }
+},
+{
+  "model": "qualifications.qualification",
+  "pk": 6,
+  "fields": {
+    "name": "CCTV Operator"
+  }
+},
+{
+  "model": "qualifications.qualification",
+  "pk": 7,
+  "fields": {
+    "name": "First Aid Level 1"
+  }
+},
+{
+  "model": "qualifications.qualification",
+  "pk": 8,
+  "fields": {
+    "name": "First Aid Level 2"
+  }
+},
+{
+  "model": "qualifications.qualification",
+  "pk": 9,
+  "fields": {
+    "name": "First Aid Level 3"
+  }
+}
+]
